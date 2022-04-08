@@ -5,7 +5,7 @@ import { Detail } from '../../../../Store/interfaces';
 
 interface Iprops {
   details: Detail[];
-  addDetail: Function;
+  addDetail: (detailObj: Detail[]) => void;
 }
 
 export default function AddDetail(props: Iprops) {

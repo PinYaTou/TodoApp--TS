@@ -9,8 +9,8 @@ import './index.css'
 interface Iprops {
   flag: boolean;
   typeList: Type[];
-  getHeaderFlag: Function;
-  changeTypes: Function;
+  getHeaderFlag: (flag: boolean) => void;
+  changeTypes: (id: string) => void;
 }
 
 export default function Types(props: Iprops) {

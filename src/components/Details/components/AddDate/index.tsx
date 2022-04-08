@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './index.css'
 
 interface Iprops {
-  addDate: Function;
+  addDate: (id: string) => void;
 }
 export default function AddDate(props: Iprops) {
   const [flag, setFlag] = useState(true);

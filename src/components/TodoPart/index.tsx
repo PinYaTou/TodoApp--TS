@@ -6,10 +6,10 @@ import './index.css'
 import { Todo } from '../../Store/interfaces'
 
 interface Iprops {
-  addTodo: Function;
-  updateTodo: Function;
-  deleteTodo: Function;
-  selectTodo: Function;
+  addTodo: (todoObj: Todo) => void;
+  updateTodo: (id: string, updatePart: Partial<Todo>) => void;
+  deleteTodo: (id: string) => void
+  selectTodo: (id: string) => void;
   todoPartTitle: string;
   undoneList: Todo[];
 }

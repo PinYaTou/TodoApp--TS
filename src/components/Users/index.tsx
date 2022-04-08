@@ -6,7 +6,7 @@ import './index.css'
 
 interface Iprops {
   avatar: avatar[];
-  addUser: Function;
+  addUser: (userOb: avatar) => void;
 }
 
 interface avatar {

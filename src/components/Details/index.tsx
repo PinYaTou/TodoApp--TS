@@ -4,14 +4,15 @@ import AddDate from './components/AddDate'
 import AddDetail from './components/AddDetail'
 import Header from './components/Header'
 import Introduction from './components/Introduction'
+import { Detail as DetailType } from '../../Store/interfaces'
 import './index.css'
 
 interface Iprops {
   todo: Todo;
-  deleteTodo: Function;
-  changeName: Function;
-  addDetail: Function;
-  addDate: Function;
+  deleteTodo: (id: string) => void;
+  changeName: (id: string, name: string) => void;
+  addDetail: (detailObj: DetailType[]) => void;
+  addDate: (id: string) => void;
 }
 export default function Detail(props: Iprops) {
 

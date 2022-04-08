@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 interface Iprops {
-  deleteTodo: Function;
+  deleteTodo: (id: string) => void;
   id: string;
 }
 export default function Header(props: Iprops) {

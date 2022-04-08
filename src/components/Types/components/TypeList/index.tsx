@@ -6,7 +6,7 @@ import './index.css'
 interface Iprops {
   flag: boolean;
   typeList: Type[];
-  changeTypes: Function;
+  changeTypes: (id: string) => void;
 
 }
 export default function TypeList(props: Iprops) {

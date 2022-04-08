@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { nanoid } from 'nanoid';
 import './index.css'
+import { Todo } from '../../../../Store/interfaces';
 
 
 interface Iprops {
-  addTodo: Function;
+  addTodo: (todoObj: Todo) => void;
 }
 export default function Header(props: Iprops) {
 
@@ -21,7 +22,7 @@ export default function Header(props: Iprops) {
       alert('输入不能为空');
       return;
     }
-    const todoObj = { id: nanoid(), name: target.value, done: false, date: '', Detail: [] };
+    const todoObj = { id: nanoid(), name: target.value, done: false, selected: false, date: '', Detail: [] };
     props.addTodo(todoObj);
     setValue('')
   }

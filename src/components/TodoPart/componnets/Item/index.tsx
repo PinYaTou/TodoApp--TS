@@ -1,5 +1,5 @@
 import React from 'react'
-import { Detail } from '../../../../Store/interfaces';
+import { Detail, Todo } from '../../../../Store/interfaces';
 import './index.css'
 
 interface Iprops {
@@ -7,8 +7,8 @@ interface Iprops {
    name: string;
    date: string;
    Detail: Detail[];
-   updateTodo: Function;
-   selectTodo: Function;
+   updateTodo: (id: string, updatePart: Partial<Todo>) => void;
+   selectTodo: (id: string) => void;
 }
 export default function Item(props: Iprops) {
 

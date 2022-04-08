@@ -4,7 +4,7 @@ import './index.css'
 interface Iprops {
   name: string;
   id: string;
-  changeName: Function;
+  changeName: (id: string, name: string) => void;
 }
 export default function Introduction(props: Iprops) {
 

@@ -3,7 +3,7 @@ import userAvatar from '../../../../Store/avatar/user.jpg'
 import './index.css'
 
 interface Iprops {
-  getHeaderFlag: Function;
+  getHeaderFlag: (flag: boolean) => void;
 }
 
 export default function Header(props: Iprops) {

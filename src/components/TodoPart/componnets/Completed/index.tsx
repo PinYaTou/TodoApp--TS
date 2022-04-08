@@ -3,8 +3,8 @@ import { Todo } from '../../../../Store/interfaces';
 import './index.css'
 
 interface Iprops {
-    updateTodo: Function;
-    deleteTodo: Function;
+    updateTodo: (id: string, updatePart: Partial<Todo>) => void;
+    deleteTodo: (id: string) => void
     completedList: Todo[];
 }
 export default function Completed(props: Iprops) {

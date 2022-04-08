@@ -5,8 +5,8 @@ import './index.css'
 
 interface Iprops {
   newUndoneList: Todo[];
-  updateTodo: Function;
-  selectTodo: Function;
+  updateTodo: (id: string, updatePart: Partial<Todo>) => void;
+  selectTodo: (id: string) => void;
 }
 export default function listPart(props: Iprops) {
 

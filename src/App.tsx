@@ -92,7 +92,7 @@ export default function App() {
     updateTodoList(newTodos);
   }
 
-  const addDetail = (detailObj: Detail[]) => {   //I SFJ
+  const addDetail = (detailObj: Detail[]) => {
     updateTodo(currentTodo!.id, { Detail: detailObj })
   }
 
